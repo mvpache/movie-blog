@@ -25,7 +25,7 @@ class SignIn extends Component {
           <Field name='email' component='input' type='text' />
         </fieldset>
         <fieldset>
-          <label>Password:<label>
+          <label>Password:</label>
           <Field name='password' component='input' type='password' />
         </fieldset>
         <button action ="submit">Sign In</button>
