@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-require('/controllers')(app);
+require('./src/controllers')(app);
 
 app.listen(5000, (req, res) => {
   console.log('server listening on port 5000')

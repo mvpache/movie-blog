@@ -1,4 +1,4 @@
-const { User } = require('./models');
+const { User } = require('../models');
 const { requireSignIn } = require('../services/passport');
 const getTokenForUser = require('../services/token');
 
@@ -9,6 +9,5 @@ const signIn = (req, res) => {
 };
 
 module.exports = (app) => {
-  app.post('/signup', signUp);
   app.post('/signin', requireSignIn, signIn);
 };
