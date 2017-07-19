@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-mongoose.promise = global.Promise;
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/auth');
 
 const app = express();

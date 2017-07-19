@@ -24,7 +24,7 @@ export const signOutUser = () => {
 
 export const signIn = (email, password, history) => {
   return (dispatch) => {
-    axios.post(`${ROOT_URL}/signin`, {email, password})
+    axios.post(`${ROOT_URL}/signIn`, {email, password})
       .then(response => {
         localStorage.setItem('token', response.data.token);
         dispatch({

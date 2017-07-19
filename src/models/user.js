@@ -21,7 +21,7 @@ const UserSchema = mongoose.Schema({
 
 UserSchema.pre('save', function(next) {
   bcrypt.genSalt(10, (err, salt) => {
-    bcrpyt.hash(this.password, salt, null, (err,hash) => {
+    bcrypt.hash(this.password, salt, null, (err,hash) => {
       if(err) return next(err);
       this.password = hash;
       next();

@@ -22,7 +22,7 @@ class SignUp extends Component {
               <Field name="email" component="input" type="text" />
             </div>
             <div>
-              <label htmlfor="password">Password: </label>
+              <label htmlFor="password">Password: </label>
               <Field name="password" component="input" type="text" />
             </div>
             <div>

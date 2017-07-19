@@ -9,5 +9,5 @@ const signIn = (req, res) => {
 };
 
 module.exports = (app) => {
-  app.post('/signin', requireSignIn, signIn);
+  app.post('/signIn', requireSignIn, signIn);
 };
